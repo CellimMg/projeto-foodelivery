@@ -1,0 +1,35 @@
+body{
+    background-color: white;
+}
+
+.principal{
+    height: 750px;
+    width: 414px;
+    background-color: #EEEEEE;
+    margin: auto;
+}
+
+.cabecalho{
+    height: 92px;
+    width: 414px;
+    position: fixed;
+    top: 0;
+    background-color: #CF2B2B;
+    color: #FFFFFF;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-left: 21px;
+    box-sizing: border-box;
+}
+
+.cabecalho span:first-child{
+    display: block;
+    font-size: 44px;
+    margin-bottom: 5px;
+}
+
+.cabecalho span:last-child{
+    display: block;
+    font-size: 18px;
+}
