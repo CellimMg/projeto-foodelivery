@@ -2,14 +2,25 @@ body{
     background-color: white;
 }
 
+.righteous{
+    font-family: 'Righteous', cursive;
+}
+
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
 .principal{
     height: 750px;
     width: 414px;
     background-color: #EEEEEE;
     margin: auto;
+    box-sizing: border-box;
+    padding-top: calc(92 + 31);
 }
 
 .cabecalho{
+    margin-bottom: 31px;
     height: 92px;
     width: 414px;
     position: fixed;
@@ -32,4 +43,14 @@ body{
 .cabecalho span:last-child{
     display: block;
     font-size: 18px;
+}
+
+
+.card{
+    width: 172px;
+    height: 216px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 9px;
 }
