@@ -2,27 +2,30 @@ body{
     background-color: white;
 }
 
-.righteous{
+.principal{
+    width: 100%;
+    background-color: #EEEEEE;
+    margin: auto;
+    padding-bottom: calc(92px + 16px);
+    padding-top: calc(92px + 4px);
+}
+
+
+.titulo{
     font-family: 'Righteous', cursive;
 }
 
-.roboto{
+.subtitulo{
     font-family: 'Roboto', sans-serif;
 }
 
-.principal{
-    height: 750px;
-    width: 414px;
-    background-color: #EEEEEE;
-    margin: auto;
-    box-sizing: border-box;
-    padding-top: calc(92 + 31);
+.conteudo{
+    padding-left: 19px;
 }
 
-.cabecalho{
-    margin-bottom: 31px;
+.cabecalho{ 
     height: 92px;
-    width: 414px;
+    width: 100%;
     position: fixed;
     top: 0;
     background-color: #CF2B2B;
@@ -45,12 +48,103 @@ body{
     font-size: 18px;
 }
 
+.categoria{
+    margin-top: 27px;
+    display: block;
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.scrollable{
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    display: flex;
+}
+
+.scrollable::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
 
 .card{
+    margin-right: 16px;
     width: 172px;
     height: 216px;
     background-color: #FFFFFF;
     padding: 15px;
     box-sizing: border-box;
     border-radius: 9px;
+}
+
+.card:hover{
+   cursor: pointer;
+}
+
+.card img{
+    height: 87px;
+    width: 144px;
+}
+
+.card span{
+    line-height: 18px;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card span:nth-child(2){
+    margin-top: 8px;
+    font-weight: 700;
+    color:#333333;
+}
+
+.card p{
+    line-height: 17px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 300;
+    color:#a6a6a6;
+    font-size: 15px;
+}
+
+.card span:last-child{
+    font-weight: 400;
+    color: #000000;
+}
+
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 92px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.rodape .botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    height: 61px;
+    width: 364px;
+    background-color: #cbcbcb;
+}
+
+.rodape .botao:hover{
+    cursor: pointer;
+}
+
+.rodape .botao span{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
 }
