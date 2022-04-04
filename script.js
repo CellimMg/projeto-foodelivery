@@ -233,8 +233,14 @@ function finish() {
     if (prato != null && bebida != null && sobremesa != null) {
         let mensagem = createMessage();
         let uri = getUri(mensagem);
-
         window.open(uri);
+        sobremesa.classList.remove("selected");
+        prato.classList.remove("selected");
+        bebida.classList.remove("selected");
+
+        prato = null;
+        bebida = null;
+        sobremesa = null;
     }
 }
 
