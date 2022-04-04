@@ -6,9 +6,13 @@ function selectPratoFrango(cardPrato) {
             let divCheck = prato.querySelector('div');
             divCheck.querySelector('.check img').style.display = 'none';
             prato.classList.remove("selected");
+            prato.classList.remove("shadow");
+
         }
         prato = cardPrato;
         prato.classList.add("selected");
+        prato.classList.add("shadow");
+
     }
 
     let divCheck = prato.querySelector('div');
@@ -26,9 +30,13 @@ function selectPratoPeixe(cardPrato) {
             let divCheck = prato.querySelector('div');
             divCheck.querySelector('.check img').style.display = 'none';
             prato.classList.remove("selected");
+            prato.classList.remove("shadow");
+
         }
         prato = cardPrato;
         prato.classList.add("selected");
+        prato.classList.add("shadow");
+
     }
 
     let divCheck = prato.querySelector('div');
@@ -46,9 +54,13 @@ function selectPratoLasanha(cardPrato) {
             let divCheck = prato.querySelector('div');
             divCheck.querySelector('.check img').style.display = 'none';
             prato.classList.remove("selected");
+            prato.classList.remove("shadow");
+
         }
         prato = cardPrato;
         prato.classList.add("selected");
+        prato.classList.add("shadow");
+
     }
 
     let divCheck = prato.querySelector('div');
@@ -67,9 +79,13 @@ function selectBebidaCoca(cardBebida) {
             let divCheck = bebida.querySelector('div');
             divCheck.querySelector('.check img').style.display = 'none';
             bebida.classList.remove("selected");
+            bebida.classList.remove("shadow");
+
         }
         bebida = cardBebida;
         bebida.classList.add("selected");
+        bebida.classList.add("shadow");
+
     }
 
     let divCheck = bebida.querySelector('div');
@@ -86,9 +102,13 @@ function selectBebidaFanta(cardBebida) {
             let divCheck = bebida.querySelector('div');
             divCheck.querySelector('.check img').style.display = 'none';
             bebida.classList.remove("selected");
+            bebida.classList.remove("shadow");
+
         }
         bebida = cardBebida;
         bebida.classList.add("selected");
+        bebida.classList.add("shadow");
+
     }
 
     let divCheck = bebida.querySelector('div');
@@ -106,9 +126,13 @@ function selectBebidaSuco(cardBebida) {
             let divCheck = bebida.querySelector('div');
             divCheck.querySelector('.check img').style.display = 'none';
             bebida.classList.remove("selected");
+            bebida.classList.remove("shadow");
+
         }
         bebida = cardBebida;
         bebida.classList.add("selected");
+        bebida.classList.add("shadow");
+
     }
 
     let divCheck = bebida.querySelector('div');
@@ -127,8 +151,12 @@ function selectSobremesaPudim(cardSobremesa) {
             let divCheck = sobremesa.querySelector('div');
             divCheck.querySelector('.check img').style.display = 'none';
             sobremesa.classList.remove("selected");
+            sobremesa.classList.remove("shadow");
+
         }
         sobremesa = cardSobremesa;
+        sobremesa.classList.add("shadow");
+
         sobremesa.classList.add("selected");
     }
 
@@ -148,9 +176,13 @@ function selectSobremesaSorvete(cardSobremesa) {
             let divCheck = sobremesa.querySelector('div');
             divCheck.querySelector('.check img').style.display = 'none';
             sobremesa.classList.remove("selected");
+            sobremesa.classList.remove("shadow");
+
         }
         sobremesa = cardSobremesa;
         sobremesa.classList.add("selected");
+        sobremesa.classList.add("shadow");
+
     }
 
     let divCheck = sobremesa.querySelector('div');
@@ -168,10 +200,12 @@ function selectSobremesaPetit(cardSobremesa) {
         if (sobremesa != null) {
             let divCheck = sobremesa.querySelector('div');
             divCheck.querySelector('.check img').style.display = 'none';
+            sobremesa.classList.remove("shadow");
             sobremesa.classList.remove("selected");
         }
         sobremesa = cardSobremesa;
         sobremesa.classList.add("selected");
+        sobremesa.classList.add("shadow");
     }
 
     let divCheck = sobremesa.querySelector('div');
