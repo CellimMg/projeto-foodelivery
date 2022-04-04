@@ -30,23 +30,32 @@
                 Primeiro, seu prato
             </span>
             <div class="scrollable">
-                <div class="card">
+                <div class="card" onclick="selectPrato(this)">
                     <img src="assets/images/frango.png" />
                     <span>Frango Yin Yang</span>
                     <p>Um pouco de batata, um pouco de salada</p>
-                    <span>R$ 14,90</span>
+                    <div>
+                        <span>R$ 14,90</span>
+                        <div class="check"><img src="assets/images/verify.png"></div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="assets/images/frango.png" />
-                    <span>Frango Yin Yang</span>
-                    <p>Um pouco de batata, um pouco de salada</p>
-                    <span>R$ 14,90</span>
+                <div class="card" onclick="selectPrato(this)">
+                    <img src="assets/images/filepeixe.jpg" />
+                    <span>Filé de Peixe</span>
+                    <p>Um delicioso filé de peixe</p>
+                    <div>
+                        <span>R$ 19,90</span>
+                        <div class="check"><img src="assets/images/verify.png"></div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="assets/images/frango.png" />
-                    <span>Frango Yin Yang</span>
-                    <p>Um pouco de batata, um pouco de salada</p>
-                    <span>R$ 14,90</span>
+                <div class="card" onclick="selectPrato(this)">
+                    <img src="assets/images/lasanha.jpg" />
+                    <span>Lasanha</span>
+                    <p>Uma lasanha de forno especial</p>
+                    <div>
+                        <span>R$ 16,90</span>
+                        <div class="check"><img src="assets/images/verify.png"></div>
+                    </div>
                 </div>
             </div>
 
@@ -54,23 +63,32 @@
                 Agora, sua bebida
             </span>
             <div class="scrollable">
-                <div class="card">
+                <div class="card" onclick="selectBebida(this)">
                     <img src="assets/images/refrigerante.png" />
                     <span>Coca-Cola</span>
                     <p>Lata 350ml</p>
-                    <span>R$ 4,90</span>
+                    <div>
+                        <span>R$ 6,90</span>
+                        <div class="check"><img src="assets/images/verify.png"></div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="assets/images/refrigerante.png" />
-                    <span>Coca-Cola</span>
+                <div class="card" onclick="selectBebida(this)">
+                    <img src="assets/images/fanta.jpg" />
+                    <span>Fanta</span>
                     <p>Lata 350ml</p>
-                    <span>R$ 4,90</span>
+                    <div>
+                        <span>R$ 5,90</span>
+                        <div class="check"><img src="assets/images/verify.png"></div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="assets/images/refrigerante.png" />
-                    <span>Coca-Cola</span>
-                    <p>Lata 350ml</p>
-                    <span>R$ 4,90</span>
+                <div class="card" onclick="selectBebida(this)">
+                    <img src="assets/images/sucomelancia.jpg" />
+                    <span>Suco de melancia</span>
+                    <p>Copo 500ml</p>
+                    <div>
+                        <span>R$ 8,90</span>
+                        <div class="check"><img src="assets/images/verify.png"></div>
+                    </div>
                 </div>
             </div>
 
@@ -78,28 +96,37 @@
                 Por fim, sua sobremesa
             </span>
             <div class="scrollable">
-                <div class="card">
+                <div class="card" onclick="selectSobremesa(this)">
                     <img src="assets/images/pudim.png" />
                     <span>Pudim de Leite</span>
                     <p>Delicioso pudim, feito com carinho</p>
-                    <span>R$ 7,90</span>
+                    <div>
+                        <span>R$ 7,90</span>
+                        <div class="check"><img src="assets/images/verify.png"></div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="assets/images/pudim.png" />
-                    <span>Pudim de Leite</span>
-                    <p>Delicioso pudim, feito com carinho</p>
-                    <span>R$ 7,90</span>
+                <div class="card" onclick="selectSobremesa(this)">
+                    <img src="assets/images/sorvete.jpg" />
+                    <span>Sorvete</span>
+                    <p>Um sorvete cremoso</p>
+                    <div>
+                        <span>R$ 9,90</span>
+                        <div class="check"><img src="assets/images/verify.png"></div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="assets/images/pudim.png" />
-                    <span>Pudim de Leite</span>
-                    <p>Delicioso pudim, feito com carinho</p>
-                    <span>R$ 7,90</span>
+                <div class="card" onclick="selectSobremesa(this)">
+                    <img src="assets/images/petitgateau.jpg" />
+                    <span>Petit Gateau</span>
+                    <p>Uma deliciosa sobremesa</p>
+                    <div>
+                        <span>R$ 14,90</span>
+                        <div class="check"><img src="assets/images/verify.png"></div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="rodape">
-            <div class="botao">
+            <div class="botao" onclick="finish()">
                 <span>Selecione os 3 itens para fechar o pedido</span>
             </div>
         </div>
@@ -109,7 +136,7 @@
 
 
 
-    <!--<script src="script.js"></script>-->
+    <script src="script.js"></script>
 </body>
 
 </html>
