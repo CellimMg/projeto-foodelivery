@@ -31,7 +31,6 @@ function selectPratoPeixe(cardPrato) {
             divCheck.querySelector('.check img').style.display = 'none';
             prato.classList.remove("selected");
             prato.classList.remove("shadow");
-
         }
         prato = cardPrato;
         prato.classList.add("selected");
@@ -132,7 +131,6 @@ function selectBebidaSuco(cardBebida) {
         bebida = cardBebida;
         bebida.classList.add("selected");
         bebida.classList.add("shadow");
-
     }
 
     let divCheck = bebida.querySelector('div');
@@ -238,9 +236,25 @@ function finish() {
         prato.classList.remove("selected");
         bebida.classList.remove("selected");
 
+        let pratoDiv = prato.querySelector('div');
+        pratoDiv.querySelector('.check img').style.display = 'none';
+
+        let bebidaDiv = bebida.querySelector('div');
+        bebidaDiv.querySelector('.check img').style.display = 'none';
+
+        let sobremesDiv = sobremesa.querySelector('div');
+        sobremesDiv.querySelector('.check img').style.display = 'none';
+
+
+        bebida.classList.remove("shadow");
+        prato.classList.remove("shadow");
+        sobremesa.classList.remove("shadow");
+
         prato = null;
         bebida = null;
         sobremesa = null;
+
+        checkFinish();
     }
 }
 
