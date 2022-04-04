@@ -234,7 +234,6 @@ function finish() {
         let mensagem = createMessage();
         let uri = getUri(mensagem);
 
-        alert(mensagem);
         window.open(uri);
     }
 }
