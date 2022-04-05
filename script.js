@@ -1,217 +1,51 @@
-let prato, sobremesa, bebida, pratoNome, bebidaNome, sobremesaNome, pratoPreco, bebidaPreco, sobremesaPreco, nome, endereco;
+let prato, sobremesa, bebida; //aqui ele passa as divs (cards)
 
-function selectPratoFrango(cardPrato) {
+function selectPrato(cardPrato) {
     if (prato !== cardPrato) {
         if (prato != null) {
             let divCheck = prato.querySelector('div');
             divCheck.querySelector('.check img').style.display = 'none';
-            prato.classList.remove("selected");
-            prato.classList.remove("shadow");
-
+            toggleShadowAndSelect(prato);
         }
         prato = cardPrato;
-        prato.classList.add("selected");
-        prato.classList.add("shadow");
-
+        toggleShadowAndSelect(prato);
     }
-
     let divCheck = prato.querySelector('div');
     divCheck.querySelector('.check img').style.display = 'block';
-
-    pratoNome = "Frango Yin Yang";
-    pratoPreco = 14.90;
-
-    checkFinish();
-}
-
-function selectPratoPeixe(cardPrato) {
-    if (prato !== cardPrato) {
-        if (prato != null) {
-            let divCheck = prato.querySelector('div');
-            divCheck.querySelector('.check img').style.display = 'none';
-            prato.classList.remove("selected");
-            prato.classList.remove("shadow");
-        }
-        prato = cardPrato;
-        prato.classList.add("selected");
-        prato.classList.add("shadow");
-
-    }
-
-    let divCheck = prato.querySelector('div');
-    divCheck.querySelector('.check img').style.display = 'block';
-
-    pratoNome = "Filé de Peixe";
-    pratoPreco = 19.90;
-
-    checkFinish();
-}
-
-function selectPratoLasanha(cardPrato) {
-    if (prato !== cardPrato) {
-        if (prato != null) {
-            let divCheck = prato.querySelector('div');
-            divCheck.querySelector('.check img').style.display = 'none';
-            prato.classList.remove("selected");
-            prato.classList.remove("shadow");
-
-        }
-        prato = cardPrato;
-        prato.classList.add("selected");
-        prato.classList.add("shadow");
-
-    }
-
-    let divCheck = prato.querySelector('div');
-    divCheck.querySelector('.check img').style.display = 'block';
-
-    pratoNome = "Lasanha";
-    pratoPreco = 16.90;
 
     checkFinish();
 }
 
 
-function selectBebidaCoca(cardBebida) {
+function selectBebida(cardBebida) {
     if (bebida !== cardBebida) {
         if (bebida != null) {
             let divCheck = bebida.querySelector('div');
             divCheck.querySelector('.check img').style.display = 'none';
-            bebida.classList.remove("selected");
-            bebida.classList.remove("shadow");
-
+            toggleShadowAndSelect(bebida);
         }
         bebida = cardBebida;
-        bebida.classList.add("selected");
-        bebida.classList.add("shadow");
-
+        toggleShadowAndSelect(bebida);
     }
-
     let divCheck = bebida.querySelector('div');
     divCheck.querySelector('.check img').style.display = 'block';
-    bebidaNome = "Coca-Cola";
-    bebidaPreco = 6.90;
-
     checkFinish();
 }
 
-function selectBebidaFanta(cardBebida) {
-    if (bebida !== cardBebida) {
-        if (bebida != null) {
-            let divCheck = bebida.querySelector('div');
-            divCheck.querySelector('.check img').style.display = 'none';
-            bebida.classList.remove("selected");
-            bebida.classList.remove("shadow");
-
-        }
-        bebida = cardBebida;
-        bebida.classList.add("selected");
-        bebida.classList.add("shadow");
-
-    }
-
-    let divCheck = bebida.querySelector('div');
-    divCheck.querySelector('.check img').style.display = 'block';
-
-    bebidaNome = "Fanta Laranja";
-    bebidaPreco = 5.90;
-
-    checkFinish();
-}
-
-function selectBebidaSuco(cardBebida) {
-    if (bebida !== cardBebida) {
-        if (bebida != null) {
-            let divCheck = bebida.querySelector('div');
-            divCheck.querySelector('.check img').style.display = 'none';
-            bebida.classList.remove("selected");
-            bebida.classList.remove("shadow");
-
-        }
-        bebida = cardBebida;
-        bebida.classList.add("selected");
-        bebida.classList.add("shadow");
-    }
-
-    let divCheck = bebida.querySelector('div');
-    divCheck.querySelector('.check img').style.display = 'block';
-
-    bebidaNome = "Suco de Melancia";
-    bebidaPreco = 8.90;
-
-    checkFinish();
-}
-
-function selectSobremesaPudim(cardSobremesa) {
+function selectSobremesa(cardSobremesa) {
     const element = cardSobremesa;
     if (sobremesa !== cardSobremesa) {
         if (sobremesa != null) {
             let divCheck = sobremesa.querySelector('div');
             divCheck.querySelector('.check img').style.display = 'none';
-            sobremesa.classList.remove("selected");
-            sobremesa.classList.remove("shadow");
-
+            toggleShadowAndSelect(sobremesa);
         }
         sobremesa = cardSobremesa;
-        sobremesa.classList.add("shadow");
-
-        sobremesa.classList.add("selected");
+        toggleShadowAndSelect(sobremesa);
     }
 
     let divCheck = sobremesa.querySelector('div');
     divCheck.querySelector('.check img').style.display = 'block';
-
-    sobremesaNome = "Pudim";
-    sobremesaPreco = 7.90;
-
-    checkFinish();
-}
-
-function selectSobremesaSorvete(cardSobremesa) {
-    const element = cardSobremesa;
-    if (sobremesa !== cardSobremesa) {
-        if (sobremesa != null) {
-            let divCheck = sobremesa.querySelector('div');
-            divCheck.querySelector('.check img').style.display = 'none';
-            sobremesa.classList.remove("selected");
-            sobremesa.classList.remove("shadow");
-
-        }
-        sobremesa = cardSobremesa;
-        sobremesa.classList.add("selected");
-        sobremesa.classList.add("shadow");
-
-    }
-
-    let divCheck = sobremesa.querySelector('div');
-    divCheck.querySelector('.check img').style.display = 'block';
-
-    sobremesaNome = "Sorvete";
-    sobremesaPreco = 9.90;
-
-    checkFinish();
-}
-
-function selectSobremesaPetit(cardSobremesa) {
-    const element = cardSobremesa;
-    if (sobremesa !== cardSobremesa) {
-        if (sobremesa != null) {
-            let divCheck = sobremesa.querySelector('div');
-            divCheck.querySelector('.check img').style.display = 'none';
-            sobremesa.classList.remove("shadow");
-            sobremesa.classList.remove("selected");
-        }
-        sobremesa = cardSobremesa;
-        sobremesa.classList.add("selected");
-        sobremesa.classList.add("shadow");
-    }
-
-    let divCheck = sobremesa.querySelector('div');
-    divCheck.querySelector('.check img').style.display = 'block';
-
-    sobremesaNome = "Petit Gateau";
-    sobremesaPreco = 14.90;
-
     checkFinish();
 }
 
@@ -229,31 +63,9 @@ function checkFinish() {
 function finish() {
     solicitarDados();
     if (prato != null && bebida != null && sobremesa != null) {
-        let mensagem = createMessage();
-        let uri = getUri(mensagem);
+        let uri = getUri(createMessage());
         window.open(uri);
-        sobremesa.classList.remove("selected");
-        prato.classList.remove("selected");
-        bebida.classList.remove("selected");
-
-        let pratoDiv = prato.querySelector('div');
-        pratoDiv.querySelector('.check img').style.display = 'none';
-
-        let bebidaDiv = bebida.querySelector('div');
-        bebidaDiv.querySelector('.check img').style.display = 'none';
-
-        let sobremesDiv = sobremesa.querySelector('div');
-        sobremesDiv.querySelector('.check img').style.display = 'none';
-
-
-        bebida.classList.remove("shadow");
-        prato.classList.remove("shadow");
-        sobremesa.classList.remove("shadow");
-
-        prato = null;
-        bebida = null;
-        sobremesa = null;
-
+        cleanCards();
         checkFinish();
     }
 }
@@ -264,12 +76,10 @@ function solicitarDados() {
 }
 
 function createMessage() {
-    let nomePrato, nomeSobremesa, nomeBebida, total;
-    total = getTotal();
     let mensagem = "Olá, gostaria de fazer o pedido\n" +
-        `- Prato: ${pratoNome}\n` +
-        `- Bebida: ${bebidaNome}\n` +
-        `- Sobremesa: ${sobremesaNome}\n` +
+        `- Prato: ${getNomeProduto("prato")}\n` +
+        `- Bebida: ${getNomeProduto("sobremesa")}\n` +
+        `- Sobremesa: ${getNomeProduto("bebida")}\n` +
         `Total: R$ ${getTotal().toFixed(2)}\n\n` +
         `Nome: ${nome}\n` +
         `Endereço: ${endereco}\n`;
@@ -281,7 +91,75 @@ function getUri(mensagem) {
     return uri;
 }
 
-
 function getTotal() {
-    return pratoPreco + sobremesaPreco + bebidaPreco;
+    return getPrecoProduto("prato") + getPrecoProduto("sobremesa") + getPrecoProduto("bebida");
+}
+
+
+function getPrecoProduto(produto) {
+    switch (produto) {
+        case "prato":
+            let precoPrato = prato.querySelector('div').querySelector('span').innerText;
+            precoPrato = formatPrecoString(precoPrato);
+            console.log(precoPrato);
+            return parseFloat(precoPrato);
+        case "sobremesa":
+            let precoSobremesa = sobremesa.querySelector('div').querySelector('span').innerText;
+            precoSobremesa = formatPrecoString(precoSobremesa);
+            console.log(precoSobremesa);
+            return parseFloat(precoSobremesa);
+        default:
+            let precoBebida = bebida.querySelector('div').querySelector('span').innerText;
+            precoBebida = formatPrecoString(precoBebida);
+            console.log(precoBebida);
+            return parseFloat(precoBebida);
+    }
+}
+
+function getNomeProduto(produto) {
+    switch (produto) {
+        case "prato":
+            let nomePrato = prato.querySelector('span').innerText;
+            return nomePrato;
+        case "sobremesa":
+            let nomeSobremesa = sobremesa.querySelector('span').innerText;
+            return nomeSobremesa;
+        default:
+            let nomeBebida = bebida.querySelector('span').innerText;
+            return nomeBebida;
+    }
+}
+
+function formatPrecoString(preco) {
+    preco = preco.replace("R$ ", "");
+    preco = preco.replace(",", ".");
+    return preco;
+}
+
+function toggleShadowAndSelect(card) {
+    card.classList.toggle("selected");
+    card.classList.toggle("shadow");
+}
+
+function cleanCards() {
+    sobremesa.classList.remove("selected");
+    prato.classList.remove("selected");
+    bebida.classList.remove("selected");
+
+    let pratoDiv = prato.querySelector('div');
+    pratoDiv.querySelector('.check img').style.display = 'none';
+
+    let bebidaDiv = bebida.querySelector('div');
+    bebidaDiv.querySelector('.check img').style.display = 'none';
+
+    let sobremesDiv = sobremesa.querySelector('div');
+    sobremesDiv.querySelector('.check img').style.display = 'none';
+
+    bebida.classList.remove("shadow");
+    prato.classList.remove("shadow");
+    sobremesa.classList.remove("shadow");
+
+    prato = null;
+    bebida = null;
+    sobremesa = null;
 }
